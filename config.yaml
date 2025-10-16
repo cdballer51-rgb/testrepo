@@ -1,0 +1,22 @@
+app:
+  name: "testrepo"
+  version: "1.0.0"
+  description: "Test repository with calculator feature"
+
+features:
+  calculator:
+    enabled: true
+    max_precision: 10
+    allow_complex_operations: false
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+environment:
+  development:
+    debug: true
+    testing: true
+  production:
+    debug: false
+    testing: false
